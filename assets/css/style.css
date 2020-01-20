@@ -1,4 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Bangers|Roboto&display=swap');
+
 body{
     margin: 0px;
-    color: red;
+    padding: 0px;
+    font-family: "Bangers"
+}
+
+.introduction{
+    height: 60vh;
+    background-color: blue;
+}
+
+.location{
+    background-color: pink;
+    height: 60vh;
+}
+
+.map{
+    background-color: purple;
+    height: 60vh;
+}
+
+.weather{
+    background-color: red;
+    height: 20vh;
+}
+
+.transport{
+    background-color: orange;
+    height: 300px;
+}
+
+.travel{
+    background-color: green;
+    height: 300px;
+}
+
+.social{
+    background-color: violet;
+    height: 100px;
 }
