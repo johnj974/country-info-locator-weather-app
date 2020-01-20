@@ -6,6 +6,10 @@ body{
     font-family: "Bangers"
 }
 
+.navbar{
+    background-color: orange;
+}
+
 .introduction{
     height: 60vh;
     background-color: blue;
@@ -36,7 +40,23 @@ body{
     height: 300px;
 }
 
-.social{
-    background-color: violet;
+.footer{
+    background-color: orange;
     height: 100px;
+    text-align: center;
+    padding: 0px;
 }
+
+ul{
+    list-style-type: none;
+    display: inline-flex;
+    padding-left: 0px;
+}
+
+li{
+    font-size: 150%;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-top: 30px;
+}
+
