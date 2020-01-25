@@ -15,7 +15,7 @@ body{
     background-color: blue;
 }
 
-.books{
+.countries{
     background-color: pink;
     height: 60vh;
 }
@@ -67,4 +67,6 @@ p{
     font-size: 30px;
 }
 
-
+a{
+    color: black;
+}

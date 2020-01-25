@@ -7,15 +7,10 @@ function calender(){
     
     let cal = day + " " + months[month] + "," + year;
 
-    
-
-
     document.getElementById("date").innerText= cal;
     document.getElementById("date").innerContent = cal;
     
     
 } 
-
-
 
 calender();
