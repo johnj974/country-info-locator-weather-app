@@ -14,6 +14,17 @@ function clock(){
     document.getElementById("clock").innerContent = time;
     
     setTimeout(clock,1000);
+
+    if(hour>=18){
+    document.getElementById("greeting").innerHTML= "Good Evening"
+    }else if(hour>=12){
+    document.getElementById("greeting").innerHTML= "Good Afternoon"
+    }else if(hour>=0){
+    document.getElementById("greeting").innerHTML= "Good Morning"
+    }
+
+
+
 } 
 
 function updateTime(i){
@@ -25,3 +36,4 @@ function updateTime(i){
 }
 
 clock();
+

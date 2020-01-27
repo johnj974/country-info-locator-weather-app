@@ -1,6 +1,6 @@
-var city = "ireland"
+let url ="https://restcountries.eu/rest/v2/name/"
 
-$.getJSON("https://restcountries.eu/rest/v2/name/"+city,function(data){
+$.getJSON("https://restcountries.eu/rest/v2/name/spain",function(data){
     
 
     let flag = data[0].flag;
@@ -15,5 +15,17 @@ $.getJSON("https://restcountries.eu/rest/v2/name/"+city,function(data){
     $(".language").append(`Native Language: ${language}`)
     $(".region").append(`Region: ${region}`)
 
+    var input;
+
+    var button = select("#button");
+    button.mousePressed(countryInfo);
+
+    function countryInfo(){
+
+    input = select("#search")    
+    }
+
    
 })
+
+

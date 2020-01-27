@@ -40,11 +40,15 @@
         <div class= "row">
             <div class = "countries col-6">
                <h2>Countries</h2>
-                   <p class="flag" style="height:50px;"></p>
-                   <p class="capital"></p>
-                   <p class="population"></p>
-                   <p class="language"></p>
-                   <p class="region"></p>
+                    <input id="search" placeholder="country"></input>
+                    <button id="button" type="button">Search</button>
+                    <div id="results">
+                        <p class="flag" style="height:50px;"></p>
+                        <p class="capital"></p>
+                        <p class="population"></p>
+                        <p class="language"></p>
+                        <p class="region"></p>
+                    </div>
             </div>
 
             <div class="map col-6">
@@ -56,7 +60,7 @@
     <div class="extra container-fluid">
         <div class="row">
             <div class="col">
-                <h2>Extra</h2>
+                <h2 id="greeting">Extra</h2>
             </div>
         </div>
     </div>
