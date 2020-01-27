@@ -40,14 +40,16 @@
         <div class= "row">
             <div class = "countries col-6">
                <h2>Countries</h2>
-                    <input id="search" placeholder="country"></input>
-                    <button id="button" type="button">Search</button>
+                    
+                    <input id="search" value="ireland"></input>
+                    <button onclick="otherFunction(document.getElementById('search').value)">Search</button>
                     <div id="results">
                         <p class="flag" style="height:50px;"></p>
-                        <p class="capital"></p>
-                        <p class="population"></p>
-                        <p class="language"></p>
-                        <p class="region"></p>
+                        <p class="capital">Capital:</p>
+                        <p class="population">Population:</p>
+                        <p class="language">Native Language:</p>
+                        <p class="region">Region:</p>
+                        
                     </div>
             </div>
 
@@ -60,7 +62,7 @@
     <div class="extra container-fluid">
         <div class="row">
             <div class="col">
-                <h2 id="greeting">Extra</h2>
+                <h2 id="greeting"></h2>
             </div>
         </div>
     </div>
@@ -77,8 +79,8 @@
                 <h2>Weather</h2>
                     <img class="icon">
                     <p class="weather"></p>
-                    <p class="temp"></p>
-                    <p class="time"></p>
+                    <p><span class="temp"></span>degrees celsius</p>
+                   
             </div>
         </div>
     </div>

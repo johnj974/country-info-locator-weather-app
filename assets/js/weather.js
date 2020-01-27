@@ -11,7 +11,7 @@ $.getJSON("https://api.openweathermap.org/data/2.5/weather?q=tralee&units=metric
 
     $(".icon").attr("src",icon);
     $(".weather").append(weather);
-    $(".temp").append(temp);
+    $(".temp").append(`${temp} `);
     
 
     // add in maybe auto update or city selector

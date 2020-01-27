@@ -1,6 +1,10 @@
-let url ="https://restcountries.eu/rest/v2/name/"
+let country = "canada"
+//let input;
+//let input = input("#search")
 
-$.getJSON("https://restcountries.eu/rest/v2/name/spain",function(data){
+
+
+function otherFunction(q){$.getJSON("https://restcountries.eu/rest/v2/name/" + q,function(data){
     
 
     let flag = data[0].flag;
@@ -10,22 +14,17 @@ $.getJSON("https://restcountries.eu/rest/v2/name/spain",function(data){
     let region = data[0].region;
 
     $(".flag").attr(flag)
-    $(".capital").append(`Capital: ${capital}`)
-    $(".population").append(`Population: ${population}`)
-    $(".language").append(`Native Language: ${language}`)
-    $(".region").append(`Region: ${region}`)
+    $(".capital").append(capital)
+    $(".population").append(population)
+    $(".language").append(language)
+    $(".region").append(region)
 
-    var input;
 
-    var button = select("#button");
-    button.mousePressed(countryInfo);
 
-    function countryInfo(){
-
-    input = select("#search")    
-    }
+    
+    
 
    
-})
+})}
 
-
+    
