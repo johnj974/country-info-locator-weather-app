@@ -1,10 +1,8 @@
-let country = "canada"
-//let input;
-//let input = input("#search")
+
+//for loop needed??
 
 
-
-function otherFunction(q){$.getJSON("https://restcountries.eu/rest/v2/name/" + q,function(data){
+function otherFunction(countryname){$.getJSON("https://restcountries.eu/rest/v2/name/" + countryname,function(data){
     
 
     let flag = data[0].flag;
@@ -14,10 +12,10 @@ function otherFunction(q){$.getJSON("https://restcountries.eu/rest/v2/name/" + q
     let region = data[0].region;
 
     $(".flag").attr(flag)
-    $(".capital").append(capital)
-    $(".population").append(population)
-    $(".language").append(language)
-    $(".region").append(region)
+    $(".capital").append(` ${capital}`)
+    $(".population").append(` ${population}`)
+    $(".language").append(` ${language}`)
+    $(".region").append(` ${region}`)
 
 
 
