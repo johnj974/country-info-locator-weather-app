@@ -71,6 +71,11 @@ a{
     color: black;
 }
 
+#flag img{
+    height:50px;
+    width:100px;
+}
+
 
 /*
 #map {

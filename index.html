@@ -39,12 +39,14 @@
     <div class="introduction container-fluid">
         <div class= "row">
             <div class = "countries col-6">
-               <h2>Countries</h2>
+                <h2 id="greeting"></h2>
                     
-                    <input id="search" value="ireland"></input>
+                    <input id="search">
                     <button onclick="otherFunction(document.getElementById('search').value)">Search</button>
                     <div id="results">
-                        <p class="flag" style="height:50px;"></p>
+                        <div id="flag">
+                        <img src="">
+                        </div>
                         <p class="capital">Capital:</p>
                         <p class="population">Population:</p>
                         <p class="language">Native Language:</p>
@@ -62,7 +64,7 @@
     <div class="extra container-fluid">
         <div class="row">
             <div class="col">
-                <h2 id="greeting"></h2>
+                <h2>Country in maybe</h2>
                 <div id="floating-panel">
                 <input id="address" type="textbook" value="Dublin,Ireland">
                 <input id="submit" type="button" value="Geocode">
