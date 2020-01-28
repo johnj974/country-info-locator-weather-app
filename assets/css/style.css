@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Bangers|Roboto&display=swap');
+/*@import url('https://fonts.googleapis.com/css?family=Bangers|Roboto&display=swap');
 
 body{
     margin: 0px;
@@ -75,8 +75,50 @@ a{
 }
 
 #flag img{
-    height:50px;
-    width:100px;
+    height:100px;
+    width:200px;
+    
+}*/
+
+body, html {
+  height: 100%;
 }
 
+.parallax {
+ 
+  background-image: url('/assets/images/rome.jpg');
+  height: 100%; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
+}
+
+.parallax2 {
+ 
+  background-image: url('/assets/images/cliff.jpg');
+  height: 100%; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.parallax3 {
+ 
+  background-image: url('/assets/images/japan.jpg');
+  height: 100%; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.scroll{
+    height:1000px;
+    background-color:red;
+    font-size:36px;
+}

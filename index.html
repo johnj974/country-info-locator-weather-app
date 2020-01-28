@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!---<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -17,7 +17,7 @@
 	<link href="assets/css/style.css" type="text/css" rel="stylesheet">
 </head>
 <body>
-<!-----------------------------------------------------------Navbar-------------------------------------------------------------------------------------------------------------->
+<!-----------------------------------------------------------Navbar--------------------------------------------------------------------------------------------------------------
     <nav class="navbar navbar-expand-lg">
         <a class="navbar-brand" href="#">Navbar</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,27 +35,29 @@
             </ul>
         </div>
     </nav>
-<!-------------------------------------------------------------------------------Intro--------------------------------------------------------------------------------------------->	
+<!-------------------------------------------------------------------------------Intro---------------------------------------------------------------------------------------------	
     <div class="introduction container-fluid">
         <div class= "row">
-            <div class = "countries col-6 ">
+            <div class = "countries col-6">
                 <h2 id="greeting"></h2>
 
-                     <div id="floating-panel">
-                        <input id="address" type="textbook" value="Dublin,Ireland">
-                        <input id="submit" type="button" value="Geocode">
-                    </div>
-
-                    <input id="search">
+                    <input id="search" placeholder="Country">
                         <button onclick="otherFunction(document.getElementById('search').value)">Search</button>
                     <div id="results">
+
+                     <div id="floating-panel">
+                        <input id="address" placeholder="City"  >
+                        <input id="submit" type="button" value="Search">
+                    </div>
+
+                    
                         <div id="flag">
                             <img src="">
-                        </div>
                         <p class="capital">Capital:</p>
                         <p class="population">Population:</p>
                         <p class="language">Native Language:</p>
                         <p class="region">Region:</p>
+                        </div>
                     </div>
             </div>
 
@@ -69,10 +71,15 @@
         <div class="row">
             <div class="col">
                 <h2>Country info  maybe</h2>
+                 <input id="userinput">
+                    <button onclick="cityFunction(document.getElementById('userinput').value)">Search</button>
+                        <div id="cityinfo">
+                            <a href=""></a>
+                        </div>
             </div>
         </div>
     </div>
-<!----------------------------------------------------------------------------------transport options------------------------------------------------------------------------------>
+<!----------------------------------------------------------------------------------transport options------------------------------------------------------------------------------
     <div class="transport container-fluid">
         <div class="row">
             <div class=" clock col">
@@ -90,7 +97,7 @@
             </div>
         </div>
     </div>
-<!------------------------------------------------------------------------------skyscanner api------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------skyscanner api-------------------------------------------------------------------------------------
     <div class="container-fluid">
         <div class="row">
             <div class=" travel col">
@@ -98,7 +105,7 @@
             </div>
         </div>
     </div>
-<!---------------------------------------------------------------------------------footer------------------------------------------------------------------------------------------>
+<!---------------------------------------------------------------------------------footer------------------------------------------------------------------------------------------
     <div class="footer container-fluid">
         <div class="row">
             <div class="col">
@@ -127,9 +134,10 @@
     <script src = "assets/js/weather.js" type = "text/javascript"></script>
     <script src = "assets/js/date.js" type = "text/javascript"></script>
     <script src = "assets/js/countries.js" type = "text/javascript"></script>
+    <script src = "assets/js/city.js" type = "text/javascript"></script>
 </body>
 
-</html>
+</html>*/
 
 
 
@@ -137,3 +145,49 @@
 <script async defer
 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkUOdZ5y7hMm0yrcCQoCvLwzdM6M8s5qk&callback=initMap">
 </script>-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Where To</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+	</script>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" type="text/css"
+		rel="stylesheet">
+	<link href="assets/css/style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div class="parallax"></div>
+
+<div class="scroll">
+Scroll Up and Down this page to see the parallax scrolling effect.
+This div is just here to enable scrolling.
+Tip: Try to remove the background-attachment property to remove the scrolling effect.
+</div>
+
+<div class="parallax2"></div>
+
+<div class="scroll">
+Scroll Up and Down this page to see the parallax scrolling effect.
+This div is just here to enable scrolling.
+Tip: Try to remove the background-attachment property to remove the scrolling effect.
+</div>
+
+<div class="parallax3"></div>
+
+<div class="scroll">
+Scroll Up and Down this page to see the parallax scrolling effect.
+This div is just here to enable scrolling.
+Tip: Try to remove the background-attachment property to remove the scrolling effect.
+</div>
+
+
+</body>
+</html>
