@@ -16,11 +16,11 @@ function clock(){
     setTimeout(clock,1000);
 
     if(hour>=17){
-    document.getElementById("greeting").innerHTML= "Good Evening, Please enter a country"
+    document.getElementById("greeting").innerHTML= "Good Evening"
     }else if(hour>=12){
-    document.getElementById("greeting").innerHTML= "Good Afternoon, Please enter a country"
+    document.getElementById("greeting").innerHTML= "Good Afternoon"
     }else if(hour>=0){
-    document.getElementById("greeting").innerHTML= "Good Morning, Please enter a country"
+    document.getElementById("greeting").innerHTML= "Good Morning"
     }
 
 

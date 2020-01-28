@@ -62,8 +62,8 @@
             </div>
 
             <div class="map col-6 ">
-                <div id="map">
-                </div>
+            <div id="map">
+            </div>
             </div>
         </div>
     </div>
@@ -164,30 +164,97 @@ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkUOdZ5y7hMm0yrcCQoCvLwzd
 	<link href="assets/css/style.css" type="text/css" rel="stylesheet">
 </head>
 <body>
-<div class="parallax"></div>
+<!--------------------------------------------------------------------navbar/clock/weather----------------------------------------------------------------------------------->
+<div class="parallax">
+    <nav class="navbar navbar-light">
+        <a class="navbar-brand">Navbar</a>
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+    </nav>
+
+     <div class="transport container-fluid">
+        <div class="row">
+            <div class=" clock col">
+                <h2>Clock</h2>
+                <h2><i class="far fa-clock"></i></h2>
+                <p id="clock"></p>
+                <p id="date"></p>
+            </div>
+
+            <div class="col">
+                <h2>Weather</h2>
+                <img class="icon">
+                <p class="weather"></p>
+                <p><span class="temp"></span>degrees celsius</p>
+            </div>
+        </div>
+    </div>
+    <h2 id="greeting"></h2>
+</div>
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
 <div class="scroll">
-Scroll Up and Down this page to see the parallax scrolling effect.
-This div is just here to enable scrolling.
-Tip: Try to remove the background-attachment property to remove the scrolling effect.
+    <input id="search" placeholder="Country">
+        <button onclick="otherFunction(document.getElementById('search').value)">Search</button>
+    <div id="results">
+        <div id="flag">
+            <img src="">
+                <p class="capital">Capital:</p>
+                <p class="population">Population:</p>
+                <p class="language">Native Language:</p>
+                <p class="region">Region:</p>
+        </div>
+    </div>
 </div>
 
 <div class="parallax2"></div>
 
-<div class="scroll">
-Scroll Up and Down this page to see the parallax scrolling effect.
-This div is just here to enable scrolling.
-Tip: Try to remove the background-attachment property to remove the scrolling effect.
+<div class="scroll2">
+        <div id="floating-panel">
+            <input id="address" placeholder="City">
+            <input id="submit" type="button" value="Search">
+        </div>
+    <div id="map">
+    </div>
 </div>
 
 <div class="parallax3"></div>
 
-<div class="scroll">
+<div class="scroll3">
 Scroll Up and Down this page to see the parallax scrolling effect.
 This div is just here to enable scrolling.
 Tip: Try to remove the background-attachment property to remove the scrolling effect.
 </div>
 
-
+    <div class="footer container-fluid">
+        <div class="row">
+            <div class="col">
+                <ul>
+                    <a href="https://www.facebook.com/" target="_blank"><li><i class="fab fa-facebook-square"></i></li></a>
+                    <a href="https://www.instagram.com/" target="_blank"><li><i class="fab fa-instagram"></i></li></a>
+                    <a href="https://twitter.com/" target="_blank"><li><i class="fab fa-twitter-square"></i></li></a>
+                </ul>
+            </div>
+        </div>
+    </div>
+<script
+        src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+	</script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+	</script>
+     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDHHyac2SiOYPNYxXMK7rqJjnB8nCaaxE&callback=initMap"></script>
+    <script src = "assets/js/map.js" type = "text/javascript"></script>
+    <script src = "assets/js/clock.js" type = "text/javascript"></script>
+    <script src = "assets/js/weather.js" type = "text/javascript"></script>
+    <script src = "assets/js/date.js" type = "text/javascript"></script>
+    <script src = "assets/js/countries.js" type = "text/javascript"></script>
+    <script src = "assets/js/city.js" type = "text/javascript"></script>
 </body>
 </html>
