@@ -11,7 +11,7 @@ body, html {
 
 .parallax {
  
-  background-image: url('/assets/images/rome.jpg');
+  background-image: url('../images/rome.jpg');
   height: 100%; 
   background-attachment: fixed;
   background-position: center;
@@ -22,7 +22,7 @@ body, html {
 
 .parallax2 {
  
-  background-image: url('/assets/images/cliff.jpg');
+  background-image: url('../images/cliff.jpg');
   height: 50%; 
   background-attachment: fixed;
   background-position: center;
@@ -33,7 +33,7 @@ body, html {
 
 .parallax3 {
  
-  background-image: url('/assets/images/japan.jpg');
+  background-image: url('../images/japan.jpg');
   height: 50%; 
   background-attachment: fixed;
   background-position: center;
