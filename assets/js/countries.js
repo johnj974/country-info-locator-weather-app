@@ -23,7 +23,7 @@ function otherFunction(countryname){$.getJSON("https://restcountries.eu/rest/v2/
 
     $("#country").click(function() {
     $('html, body').animate({
-        scrollTop: $("#results").offset().top
+        scrollTop: $("#country-info").offset().top
     }, 2000);
 });
       

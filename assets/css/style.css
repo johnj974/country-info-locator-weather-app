@@ -59,7 +59,7 @@ body, html {
 }
 
 .scroll3{
-    height:500px;
+    height:400px;
     background-color:slategrey;
     font-size:20px;
     text-align:center;
@@ -89,6 +89,7 @@ li{
 #flag img{
     height:150px;
     width:300px;
+    margin-bottom: 2%;
 }
 
 #map{
