@@ -27,3 +27,10 @@ function otherFunction(countryname){$.getJSON("https://restcountries.eu/rest/v2/
     }, 2000);
 });
       
+/*$(form).submit(function(e){
+  $("#results-area").html("");
+})
+
+/*function clearform() {
+  document.getElementById("results").reset();
+}*/
