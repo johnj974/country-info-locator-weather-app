@@ -107,3 +107,15 @@ li{
     transition: color 0.5s ease-in-out;
 }
 
+#tobottom{
+    color: green;
+}
+
+#tobottom:hover{
+    color: red;
+    transition: color 0.5s ease-in-out;
+}
+
+#bottom{
+    margin-top: 2%;
+}
