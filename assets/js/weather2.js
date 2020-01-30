@@ -31,14 +31,15 @@ let key = "&APPID=2a1b20e296836689a2296c960cf5a29a";
 let input;
 
 
-function cityweather(){
-    $.getJSON("https://api.openweathermap.org/data/2.5/weather?q="+country+"&units=metric&APPID=2a1b20e296836689a2296c960cf5a29a",function(citydata){
+function cityweather(countryname){
+    $.getJSON("https://api.openweathermap.org/data/2.5/weather?q="+countryname+"&units=metric&APPID=2a1b20e296836689a2296c960cf5a29a",function(citydata){
     console.log(citydata)
+
     let windDirection = citydata.wind.deg;
 
     document.getElementById("weather2").innerHTML=citydata.weather[0].main;
     document.getElementById("temp2").innerHTML= `${Math.floor(citydata.main.temp)} degrees celsius`;
-    document.getElementById("wind2").innerHTML=`${Math.floor(citydata.wind.speed)} KMPH`;
+    document.getElementById("wind2").innerHTML=`${Math.floor(citydata.wind.speed)} KPH`;
     document.getElementById("direction2").innerHTML=windDirection;
     document.getElementById("humidity2").innerHTML=`${citydata.main.humidity} degrees humidity`;
 
