@@ -1,23 +1,32 @@
 
-//for loop needed??
+
+
+
+
+
 
 
 function otherFunction(countryname){$.getJSON("https://restcountries.eu/rest/v2/name/" + countryname,function(data){
-    
 
-   
-    let capital = data[0].capital;
-    let population = data[0].population;
-    let language = data[0].languages[0].nativeName;
-    let region = data[0].region;
-    
 
     document.querySelector("#flag img").src = data[0].flag;
-    $(".capital").append(` ${capital}`)
-    $(".population").append(` ${population}`)
-    $(".language").append(` ${language}`)
-    $(".region").append(` ${region}`)   
+    document.getElementById("capital").innerHTML=data[0].capital;
+    document.getElementById("population").innerHTML=data[0].population;
+    document.getElementById("language").innerHTML=data[0].languages[0].nativeName;
+    document.getElementById("region").innerHTML=data[0].region;
+   
+    let countryNames;
+    countryNames = data[0].name;
+    console.log(countryNames)
+    let options = "";
+    for(let i=0;i<countryNames.length;i++){
+        option += `<option value="${countryNames[i].alpha3Code}">${countryNames[i].name}</option>`;
+    }
 
+    document.getElementById("search").innerHTML=option;
+      
+
+   
    
 })}
 
@@ -26,11 +35,8 @@ function otherFunction(countryname){$.getJSON("https://restcountries.eu/rest/v2/
         scrollTop: $("#country-info").offset().top
     }, 2000);
 });
-      
-/*$(form).submit(function(e){
-  $("#results-area").html("");
-})
 
-/*function clearform() {
-  document.getElementById("results").reset();
-}*/
+
+      
+
+   

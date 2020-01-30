@@ -98,3 +98,12 @@ li{
     margin-right: 30px;
 }
 
+#totop{
+    color: red;
+}
+
+#totop:hover{
+    color: green;
+    transition: color 0.5s ease-in-out;
+}
+
