@@ -27,13 +27,13 @@ function countryweather(countryname){
     document.getElementById("humidity2").innerHTML=`${citydata.main.humidity} degrees humidity`;
 
     if(windDirection>=270){
-    document.getElementById("direction2").innerHTML= "Northerly"
+    document.getElementById("direction2").innerHTML= "Wind Direction: Northerly"
     }else if(windDirection>=180){
-    document.getElementById("direction2").innerHTML= "Westerly"
+    document.getElementById("direction2").innerHTML= "Wind Direction: Westerly"
     }else if(windDirection>=90){
-    document.getElementById("direction2").innerHTML= "Southerly"
+    document.getElementById("direction2").innerHTML= "Wind Direction: Southerly"
     }else if(windDirection>=0){
-    document.getElementById("direction2").innerHTML= "Easterly"
+    document.getElementById("direction2").innerHTML= "Wind Direction: Easterly"
     }
 
 
