@@ -33,7 +33,7 @@ body, html {
 
 .parallax3 {
  
-  background-image: url('../images/japan.jpg');
+  background-image: url('../images/japan2.jpg');
   height: 50%; 
   background-attachment: fixed;
   background-position: center;
@@ -101,7 +101,7 @@ li{
 }
 
 #search{
-    width: 50%;
+    width: 60%;
     font-size: 140%;
     background: none;
 }
@@ -111,11 +111,15 @@ li{
     font-size: 120%;
 }
 
-@media only screen and(max-width:600px){
-    #search{
-        width: 100%;
-    }
+#searchbar{
+   text-align: right;
 }
+
+#main-weather{
+    text-align: right;
+}
+
+
 
 /*--------------------------------------------------------------------sliders---------------------------------------------------------------------------------*/
 #totop{
@@ -147,5 +151,11 @@ li{
 #tomap:hover{
     color: red;
     transition: color 0.5s ease-in-out;
+}
+
+@media only screen and (max-width:992px){
+    #searchbar{
+        text-align: left;
+    }
 }
 
