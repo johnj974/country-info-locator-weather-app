@@ -6,7 +6,7 @@ var lng2;
 
 
 
-function otherFunction(countryname){$.getJSON("https://restcountries.eu/rest/v2/name/" + countryname,function(data){
+function countryInfo(countryname){$.getJSON("https://restcountries.eu/rest/v2/name/" + countryname,function(data){
 
 
     document.querySelector("#flag img").src = data[0].flag;
@@ -19,16 +19,11 @@ function otherFunction(countryname){$.getJSON("https://restcountries.eu/rest/v2/
     var lat = data[0].latlng[0];
     lat2 = lat;
 
-
     var lng = data[0].latlng[1];
     lng2 = lng;
     return lng2,lat2; 
-
     
 })}
-
-console.log(lat2);
-
 
 
     function newMap() {setTimeout (function(){
@@ -41,7 +36,7 @@ console.log(lat2);
 
     document.getElementById('submit').addEventListener('click', function() {
         geocodeAddress(geocoder, map);
-    })},500);
+    })},1000);
 }
 
 
@@ -51,11 +46,9 @@ console.log(lat2);
     }, 2000);
 });
 
-
-
     $("#tomap").click(function() {
             $('html, body').animate({
-                scrollTop: $("#map").offset().top
+                scrollTop: $("#scroll2").offset().top
             }, 2000);
 });
 

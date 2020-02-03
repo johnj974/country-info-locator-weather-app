@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
 
 
-/*-----------------------------------------------------------------images+main content sections-----------------------------------------------------*/
+/*-----------------------------------------------------------------images+main content sections----------------------------------------------------------------*/
 body, html {
   height: 100%;
   margin: 0px;
@@ -129,4 +129,8 @@ li{
 #tomap:hover{
     color: red;
     transition: color 0.5s ease-in-out;
+}
+
+#search{
+    width: 15%;
 }
