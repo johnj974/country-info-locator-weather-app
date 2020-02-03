@@ -26,6 +26,12 @@ function otherFunction(countryname){$.getJSON("https://restcountries.eu/rest/v2/
         }, 2000);
 });
  
+  $("#tomap").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#map").offset().top
+        }, 2000);
+});
+ 
 
 
       

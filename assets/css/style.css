@@ -47,7 +47,7 @@ body, html {
     background-color:slategrey;
     font-size:20px;
     text-align:center;
-    padding-top: 5%;
+    padding-top: 2%;
     
 }
 
@@ -56,6 +56,7 @@ body, html {
     background-color:slategrey;
     font-size:20px;
     text-align:center;
+    padding-top: 35px;
 }
 
 .scroll3{

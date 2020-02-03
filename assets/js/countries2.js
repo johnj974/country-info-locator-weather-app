@@ -62,7 +62,7 @@ function myFunction() {
 
     document.getElementById('submit').addEventListener('click', function() {
         geocodeAddress(geocoder, map);
-    })},1000);
+    })},500);
 }
 
 
