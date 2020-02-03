@@ -7,11 +7,11 @@
 
 
 
-let address = "https://api.openweathermap.org/data/2.5/weather?q=";
+/*let address = "https://api.openweathermap.org/data/2.5/weather?q=";
 let country = "germany";
 let units = "&units=metric";
 let key = "&APPID=2a1b20e296836689a2296c960cf5a29a";
-let input;
+let input;*/
 
 
 function countryweather(countryname){
@@ -39,7 +39,7 @@ function countryweather(countryname){
 
     
 
-    input = select("#search")
+    //input = select("#search")
 })};
 
    $("#totop").click(function() {

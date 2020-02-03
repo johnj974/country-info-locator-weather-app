@@ -11,7 +11,7 @@ body, html {
 
 .parallax {
  
-  background-image: url('../images/rome.jpg');
+  background-image: url('../images/volcano.jpg');
   height: 100%; 
   background-attachment: fixed;
   background-position: center;
@@ -99,6 +99,24 @@ li{
     margin-left: 30px;
     margin-right: 30px;
 }
+
+#search{
+    width: 50%;
+    font-size: 140%;
+    background: none;
+}
+
+#country{
+    background: none;
+    font-size: 120%;
+}
+
+@media only screen and(max-width:600px){
+    #search{
+        width: 100%;
+    }
+}
+
 /*--------------------------------------------------------------------sliders---------------------------------------------------------------------------------*/
 #totop{
     color: red;
@@ -131,6 +149,3 @@ li{
     transition: color 0.5s ease-in-out;
 }
 
-#search{
-    width: 15%;
-}

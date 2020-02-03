@@ -23,8 +23,10 @@
 <div class="container-fluid parallax">
     <nav class="navbar navbar-light">
         <h3 class="navbar-brand" id="top">Please select a country</h3>
+        <div id="searchbar">
             <select id="search"></select>
             <button id="country" onclick="countryInfo(document.getElementById('search').value,countryweather(document.getElementById('search').value),newMap())">Search</button>
+        </div>
     </nav>
 
     <div class="container-fluid">
