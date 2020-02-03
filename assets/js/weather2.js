@@ -21,8 +21,8 @@ function countryweather(countryname){
     let windDirection = citydata.wind.deg;
 
     document.getElementById("weather2").innerHTML=citydata.weather[0].main;
-    document.getElementById("temp2").innerHTML= `${Math.floor(citydata.main.temp)} degrees celsius`;
-    document.getElementById("wind2").innerHTML=`Wind Speed: ${Math.floor(citydata.wind.speed)} KPH`;
+    document.getElementById("temp2").innerHTML= `${Math.round(citydata.main.temp)} degrees celsius`;
+    document.getElementById("wind2").innerHTML=`Wind Speed: ${Math.round(citydata.wind.speed)} KPH`;
     document.getElementById("direction2").innerHTML=windDirection;
     document.getElementById("humidity2").innerHTML=`${citydata.main.humidity} degrees humidity`;
 

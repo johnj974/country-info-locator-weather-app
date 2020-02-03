@@ -3,7 +3,7 @@
 
 var lat2;
 var lng2;
-var test2 = "";
+
 
 
 function otherFunction(countryname){$.getJSON("https://restcountries.eu/rest/v2/name/" + countryname,function(data){
@@ -15,47 +15,26 @@ function otherFunction(countryname){$.getJSON("https://restcountries.eu/rest/v2/
     document.getElementById("language").innerHTML=`Language: ${data[0].languages[0].nativeName}`;
     document.getElementById("region").innerHTML=`Region: ${data[0].region}`;
 
-    //let coord = data[0].latlng[1];
-    //console.log(coord)
-
+    
     var lat = data[0].latlng[0];
     lat2 = lat;
-   // return lat2;
+
 
     var lng = data[0].latlng[1];
     lng2 = lng;
     return lng2,lat2; 
 
     
-    //console.log(lng)
-
-     //var test = "53.3498"
-     //test2 = test
-     //return test2
-
-    
-    // console.log(test2)
-
-    // console.log(lat)
-    // console.log(lng)
 })}
 
 console.log(lat2);
 
-  
-   
-   
-   /* <script>
-function myFunction() {
-  setTimeout(function(){ alert("Hello"); }, 3000);
-}
-</script>*/
 
 
     function newMap() {setTimeout (function(){
     var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 5,
-    center: {lat: lat2, lng: lng2}/////put data path directly into here and place in countries function???
+    center: {lat: lat2, lng: lng2}
     
     });
     var geocoder = new google.maps.Geocoder();
@@ -72,10 +51,19 @@ function myFunction() {
     }, 2000);
 });
 
-    $("#tobottom").click(function() {
+
+
+    $("#tomap").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#map").offset().top
+            }, 2000);
+});
+
+    $("#tobottom2").click(function() {
         $('html, body').animate({
             scrollTop: $("#bottom").offset().top
         }, 2000);
 });
+    
  
 
