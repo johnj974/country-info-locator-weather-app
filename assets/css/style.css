@@ -100,16 +100,12 @@ li{
     margin-right: 30px;
 }
 
-#search{
+#country{
     width: 60%;
-    font-size: 140%;
+    font-size: 130%;
     background: none;
 }
 
-#country{
-    background: none;
-    font-size: 120%;
-}
 
 #searchbar{
    text-align: right;
@@ -117,11 +113,23 @@ li{
 
 #main-weather{
     text-align: right;
+    font-size: 20px;
+}
+
+.clock{
+    font-size: 20px;
+}
+
+#date{
+    font-size: 16px;
+}
+
+#clock-icon{
+    font-size: 35px;
 }
 
 
-
-/*--------------------------------------------------------------------sliders---------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------buttons---------------------------------------------------------------------------------*/
 #totop{
     color: red;
 }
@@ -152,6 +160,19 @@ li{
     color: red;
     transition: color 0.5s ease-in-out;
 }
+
+#search{
+    background: none;
+    font-size: 130%;
+    border: none;
+    color: white;
+}
+
+#search:hover{
+color: black;
+transition: color 0.5s ease-in-out;
+}
+/*----------------------------------------------------------------media----------------------------------------------------------------------------------*/
 
 @media only screen and (max-width:992px){
     #searchbar{

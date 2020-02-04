@@ -1,5 +1,5 @@
 
-function clock(){
+function clock() {
     let date = new Date();
     let hour = date.getHours();
     let minute = date.getMinutes();

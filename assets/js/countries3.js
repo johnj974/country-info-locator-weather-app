@@ -11,7 +11,7 @@ function initialize(countriesData){
     for(let i=0;i<countries.length;i++){
         options+=`<option value="${countries[i].name}">${countries[i].name}</option>`;
     }
-    document.getElementById("search").innerHTML=options;
+    document.getElementById("country").innerHTML=options;
 }
 
 

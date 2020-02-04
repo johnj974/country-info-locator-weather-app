@@ -40,7 +40,7 @@ function countryInfo(countryname){$.getJSON("https://restcountries.eu/rest/v2/na
 }
 
 
-    $("#country").click(function() {
+    $("#search").click(function() {
     $('html, body').animate({
         scrollTop: $("#country-info").offset().top
     }, 2000);
