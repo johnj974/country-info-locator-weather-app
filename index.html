@@ -22,7 +22,7 @@
             <!--------------------------------------------- navbar/clock/weather ------------------------------------------------------>
 <div class="container-fluid parallax">
     <nav class="navbar navbar-light">
-        <h3 class="navbar-brand" id="top">Please select a country</h3>
+        <h2 class="navbar-brand" id="top">Please select a country</h2>
         <div id="searchbar">
             <select id="country"></select>
             <button id="search" onclick="countryInfo(document.getElementById('country').value,countryweather(document.getElementById('country').value),newMap())">Search</button>
@@ -32,7 +32,6 @@
     <div class="container-fluid">
         <div class="row">
             <div class="clock col">
-                <!---<div id="clock-icon"><i class="far fa-clock"></i></div>-->
                 <div id="clock"></div>
                 <div id="date"></div>
                 <br>
@@ -47,7 +46,7 @@
         </div>
     </div>
 </div>
-<!--------------------------------------------------------- main section ------------------------------------------------------------------------------>
+        <!--------------------------------------------------------- main section ------------------------------------------------------------------>
 
 <div id="country-info" class="container-fluid scroll">
     <div id="results">
@@ -82,14 +81,14 @@
         </div>
     </div>
 </div>
-
+        <!--------------------------------------------------------footer--------------------------------------------------------------->
 <div class="footer container-fluid">
     <div class="row">
         <div class="col">
             <ul>
-                <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href="https://www.facebook.com/" target="_blank"><i id="facebook" class="fab fa-facebook-square"></i></a></li>
                 <li><a href="#top"><i id="totop" class="far fa-caret-square-up"></i></a></li>
-                <li><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
+                <li><a href="https://twitter.com/" target="_blank"><i id="twitter" class="fab fa-twitter-square"></i></a></li>
             </ul>
         </div>
     </div>

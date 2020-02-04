@@ -31,12 +31,10 @@ function countryInfo(countryname){$.getJSON("https://restcountries.eu/rest/v2/na
     zoom: 5,
     center: {lat: lat2, lng: lng2}
     
-    });
+    })},1000);
     var geocoder = new google.maps.Geocoder();
 
-    document.getElementById('submit').addEventListener('click', function() {
-        geocodeAddress(geocoder, map);
-    })},1000);
+    
 }
 
 

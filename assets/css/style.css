@@ -130,35 +130,17 @@ li{
 
 
 /*--------------------------------------------------------------------buttons---------------------------------------------------------------------------------*/
-#totop{
-    color: red;
-}
-
-#totop:hover{
-    color: green;
-    transition: color 0.5s ease-in-out;
-}
-
-#tobottom2{
+#totop,#tobottom2,#tomap{
     color: green;
 }
 
-#tobottom2:hover{
+#totop:hover,#tobottom2:hover,#tomap:hover{
     color: red;
     transition: color 0.5s ease-in-out;
 }
 
 #bottom{
     margin-top: 2%;
-}
-
-#tomap{
-    color: green;
-}
-
-#tomap:hover{
-    color: red;
-    transition: color 0.5s ease-in-out;
 }
 
 #search{
@@ -169,9 +151,19 @@ li{
 }
 
 #search:hover{
-color: black;
-transition: color 0.5s ease-in-out;
+    color: black;
+    transition: color 0.5s ease-in-out;
 }
+
+#facebook,#twitter{
+    color: red;
+}
+
+#twitter:hover,#facebook:hover{
+    color: green;
+    transition: color 0.5s ease-in-out;
+}
+
 /*----------------------------------------------------------------media----------------------------------------------------------------------------------*/
 
 @media only screen and (max-width:992px){
