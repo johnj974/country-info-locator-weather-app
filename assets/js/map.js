@@ -7,7 +7,7 @@
     center: {lat: 53.1424, lng: -7.6921}
     
   });
-  var geocoder = new google.maps.Geocoder();
+  
 
   
 }
