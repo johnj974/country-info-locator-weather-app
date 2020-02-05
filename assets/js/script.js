@@ -15,7 +15,7 @@ function clock() {
     
     setTimeout(clock,1000);
 
-    if(hour>=17){
+    if(hour>=17){                                                                   //added code for personalised greeting
     document.getElementById("greeting").innerHTML= "Good Evening"
     }else if(hour>=12){
     document.getElementById("greeting").innerHTML= "Good Afternoon"

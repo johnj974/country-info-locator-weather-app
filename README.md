@@ -2,10 +2,11 @@
 
  <div id="readme" class="Box-body readme blob js-code-block-container">
     <article class="markdown-body entry-content p-3 p-md-6" itemprop="text"><h1><a id="user-content-your-projects-name" class="anchor" aria-hidden="true" href="#your-projects-name"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg>
-    </a>Country information,locator and weather app</h1>
+    </a>Country Information,Locator and Weather app</h1>
 
 <p>This website is used to present information to a user,it has a simple to use layout which is easy to navigate.
-<br>It shows country information, location of that country and the current available weather for that country</p>
+<br>It shows current time and weather for Ireland, Upon selection of a country from a dropdown list it shows some<br> 
+ information for that country,the location of that country and the current available weather for that country</p>
 
 
 <h2><a id="user-content-ux" class="anchor" aria-hidden="true" href="#ux"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg>
@@ -61,9 +62,10 @@ I would have the weather at the top of the site linked to a geolocator as it is 
 <p>The site was tested on mobile devices manufactured by huawei,apple and samsung.it was tested on laptop devices and desktops <br>
 of varying sizes and operating systems such as chrome,firefox,safari and internet explorer, only slight styling changes were observed<br>
  all the scrolling functions work correctly on the differant devices and sites</p>
-<p>During testing the new map failed to load maybe two-three times out of hundreds of querys, I also noticed on smaller devices there<br>
-  is a white margin on the right side of the screen,i fixed that but that compromised the workings of the sliders so i must find another way<br>
-  also the weather for some of the countries that are a bit off the beaten track<br>
+<p>During testing the new map failed to load maybe two-three times out of hundreds of querys,I moved the script for the map below the rest of the javascript<br>
+and that seems to have resolved the issue, more tests may be needed here I also noticed on smaller devices there<br>
+  is a white margin on the right side of the screen which was being caused by a row expanding beyond its parent container,<br>
+  that seems to be fixed now also also the weather for some of the countries that are a bit off the beaten track<br>
   do not seem to have any accessible weather data, I tried to implement an information message regarding the missing<br>
   weather data but all my attempts seemed to compromise the working of the site as it currently stands so I will have to fix<br>
   that in the future,currently if you request one of these countries first the 'no weather data' message remains(e.g:christmas island)<br>

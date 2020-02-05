@@ -19,8 +19,8 @@ $.getJSON("https://api.openweathermap.org/data/2.5/weather?q=ireland&units=metri
 function countryweather(countryname) {
     $.getJSON("https://api.openweathermap.org/data/2.5/weather?q=" + countryname + "&units=metric&APPID=2a1b20e296836689a2296c960cf5a29a", function (citydata) {
     
-    
-    
+                                                                                        //function that takes in value of id=country selection
+                                                                                        //to get weather data using that selection
     let windDirection = citydata.wind.deg;
 
     document.getElementById("weather2").innerHTML=citydata.weather[0].main;
@@ -31,7 +31,7 @@ function countryweather(countryname) {
 
 
     if(windDirection>=270){
-    document.getElementById("direction2").innerHTML= "Wind Direction: Northerly"
+    document.getElementById("direction2").innerHTML= "Wind Direction: Northerly"          // added this code to show wind as a direction
     }else if(windDirection>=180){
     document.getElementById("direction2").innerHTML= "Wind Direction: Westerly"
     }else if(windDirection>=90){
