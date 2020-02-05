@@ -7,7 +7,6 @@ body, html {
   margin: 0px;
   padding: 0px;
   font-family: "Merriweather";
-  
 }
 
 .parallax {
@@ -18,7 +17,7 @@ body, html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
+ 
 }
 
 .parallax2 {
@@ -79,13 +78,15 @@ ul{
     list-style-type: none;
     display: inline-flex;
     padding-left: 0px;
+    
 }
 
 li{
     font-size: 150%;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
     padding-top: 30px;
+
 }
 
 #flag img{

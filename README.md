@@ -66,10 +66,14 @@ of varying sizes and operating systems such as chrome,firefox,safari and interne
   also the weather for some of the countries that are a bit off the beaten track<br>
   do not seem to have any accessible weather data, I tried to implement an information message regarding the missing<br>
   weather data but all my attempts seemed to compromise the working of the site as it currently stands so I will have to fix<br>
-  that in the future </p>
+  that in the future,currently if you request one of these countries first the 'no weather data' message remains(e.g:christmas island)<br>
+  However if you request a country with weather data first and then the country without the weather data the data from the first request remains<br>
+ </p>
   <p>all coding was passed through validators, three red errors showed in the html validator but they are related to the unpopulated<br>
-  image tag which is only populated after the search is initiated,css has no errors, javascript validator showed up spacing issues,<br>
-  i fixed some of these and left others where i thought it made it easier to read the code.
+  image tag which is only populated after the search is initiated, it also showed an error for not having an alt image tag but if i put<br>
+  that into the site it appears before any information is called and it does not look nice so i intentionally left it out<br>
+  css has no errors, javascript validator showed up spacing issues,i fixed some of these and left others where i thought it made it easier to read the code.
+ 
 
 <h2><a id="user-content-deployment" class="anchor" aria-hidden="true" href="#deployment"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg>
 </a>Deployment</h2>
