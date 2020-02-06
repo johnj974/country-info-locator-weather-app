@@ -67,7 +67,8 @@ of varying sizes and operating systems such as chrome,firefox, and edge, only sl
  alternating between using the scroll bar and button produces the same failure in sofar as the image is there using the bar<br>
  and not there when using the button. I had a look online to see if anyone else had the same issues but there was no fix relating<br>
  to the failure that i am experiencing, this is something which will have to be addressed with more experience<br>
-  currently i would say that the site is not compatible with edge.</p>
+  currently i would say that the site is not compatible with edge. On one occasion the flag img failed to update<br>
+ This only happened the one time out of hundreds of tests so i did not investigate any further</p>
 
 <p>During testing the new map failed to load maybe two-three times out of hundreds of querys,I moved the script for the map below the rest of the javascript<br>
 and that seems to have resolved the issue, more tests may be needed here I also noticed on smaller devices there<br>
