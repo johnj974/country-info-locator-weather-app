@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
-
+@import url("https://fonts.googleapis.com/css?family=Merriweather&display=swap");
 
 /*-----------------------------------------------------------------images+main content sections----------------------------------------------------------------*/
-body, html {
+body,
+html {
   height: 100%;
   margin: 0px;
   padding: 0px;
@@ -10,167 +10,161 @@ body, html {
 }
 
 .parallax {
- 
-  background-image: url('../images/volcano.jpg');
-  height: 100%; 
+  background-image: url("../images/volcano.jpg");
+  height: 100%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
- 
 }
 
 .parallax2 {
- 
-  background-image: url('../images/cliff.jpg');
-  height: 50%; 
+  background-image: url("../images/cliff.jpg");
+  height: 50%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 
 .parallax3 {
- 
-  background-image: url('../images/japan2.jpg');
-  height: 50%; 
+  background-image: url("../images/japan2.jpg");
+  height: 50%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 
-.scroll{
-    height:500px;
-    background-color:slategrey;
-    font-size:20px;
-    text-align:center;
-    padding-top: 2%;
-    
+.scroll {
+  height: 500px;
+  background-color: slategrey;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 2%;
 }
 
-.scroll2{
-    height:500px;
-    background-color:slategrey;
-    font-size:20px;
-    text-align:center;
-    padding-top: 35px;
+.scroll2 {
+  height: 500px;
+  background-color: slategrey;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 35px;
 }
 
-.scroll3{
-    height:400px;
-    background-color:slategrey;
-    font-size:20px;
-    text-align:center;
+.scroll3 {
+  height: 400px;
+  background-color: slategrey;
+  font-size: 20px;
+  text-align: center;
 }
 /*-----------------------------------------------------------------components-----------------------------------------------------------------------------------*/
 
-.footer{
-    background-color: orange;
-    height: 100px;
-    text-align: center;
-    padding: 0px;
+.footer {
+  background-color: orange;
+  height: 120px;
+  text-align: center;
+  padding: 0px;
 }
 
-ul{
-    list-style-type: none;
-    display: inline-flex;
-    padding-left: 0px;
-    
+ul {
+  list-style-type: none;
+  display: inline-flex;
+  padding-left: 0px;
 }
 
-li{
-    font-size: 150%;
-    margin-left: 40px;
-    margin-right: 40px;
-    padding-top: 30px;
-
+li {
+  font-size: 150%;
+  margin-left: 40px;
+  margin-right: 40px;
+  padding-top: 30px;
 }
 
-#flag img{
-    height:150px;
-    width:300px;
-    margin-bottom: 2%;
-    margin-top: 3%
+#flag img {
+  height: 150px;
+  width: 300px;
+  margin-bottom: 2%;
+  margin-top: 3%;
 }
 
-#map{
-    height:430px;
-    margin-left: 30px;
-    margin-right: 30px;
+#map {
+  height: 430px;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
-#country{
-    width: 60%;
-    font-size: 130%;
-    background: none;
+#country {
+  width: 60%;
+  font-size: 130%;
+  background: none;
 }
 
-
-#searchbar{
-   text-align: right;
+#searchbar {
+  text-align: right;
 }
 
-#main-weather{
-    text-align: right;
-    font-size: 20px;
+#main-weather {
+  text-align: right;
+  font-size: 20px;
 }
 
-.clock{
-    font-size: 20px;
+.clock {
+  font-size: 20px;
 }
 
-#date{
-    font-size: 16px;
+#date {
+  font-size: 16px;
 }
 
-#clock-icon{
-    font-size: 35px;
+#clock-icon {
+  font-size: 35px;
 }
-
 
 /*--------------------------------------------------------------------buttons---------------------------------------------------------------------------------*/
-#totop,#tobottom2,#tomap{
-    color: green;
+#totop,
+#tobottom2,
+#tomap {
+  color: green;
 }
 
-#totop:hover,#tobottom2:hover,#tomap:hover{
-    color: red;
-    transition: color 0.5s ease-in-out;
+#totop:hover,
+#tobottom2:hover,
+#tomap:hover {
+  color: red;
+  transition: color 0.5s ease-in-out;
 }
 
-#bottom{
-    margin-top: 2%;
+#bottom {
+  margin-top: 2%;
 }
 
-#search{
-    background: none;
-    font-size: 130%;
-    border: none;
-    color: white;
+#search {
+  background: none;
+  font-size: 130%;
+  border: none;
+  color: white;
 }
 
-#search:hover{
-    color: black;
-    transition: color 0.5s ease-in-out;
+#search:hover {
+  color: black;
+  transition: color 0.5s ease-in-out;
 }
 
-#facebook,#twitter{
-    color: red;
+#facebook,
+#twitter {
+  color: red;
 }
 
-#twitter:hover,#facebook:hover{
-    color: green;
-    transition: color 0.5s ease-in-out;
+#twitter:hover,
+#facebook:hover {
+  color: green;
+  transition: color 0.5s ease-in-out;
 }
 
 /*----------------------------------------------------------------media----------------------------------------------------------------------------------*/
 
-@media only screen and (max-width:992px){
-    #searchbar{
-        text-align: left;
-    }
+@media only screen and (max-width: 992px) {
+  #searchbar {
+    text-align: left;
+  }
 }
-
