@@ -1,3 +1,4 @@
+// prepopulation code for country section
 function prePopulate(country) {
   $.getJSON(
     "https://restcountries.eu/rest/v2/name/" + country,
@@ -18,6 +19,8 @@ function prePopulate(country) {
 }
 
 prePopulate("ireland");
+
+// ---------
 
 var lat2; //  created a function that takes in value of country entered
 var lng2; //  into the select box which has id= country and uses it as
