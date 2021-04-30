@@ -1,29 +1,21 @@
- 
-
- 
- function initMap() {
-  var map = new google.maps.Map(document.getElementById('map'), {
+function initMap() {
+  var map = new google.maps.Map(document.getElementById("map"), {
     zoom: 5,
-    center: {lat: 53.1424, lng: -7.6921}
-    
+    center: { lat: 53.1424, lng: -7.6921 },
   });
-  
-
-  
 }
 
 function geocodeAddress(geocoder, resultsMap) {
-  var address = document.getElementById('address').value;
-  geocoder.geocode({'address': address}, function(results, status) {
-    if (status === 'OK') {
+  var address = document.getElementById("address").value;
+  geocoder.geocode({ address: address }, function (results, status) {
+    if (status === "OK") {
       resultsMap.setCenter(results[0].geometry.location);
       var marker = new google.maps.Marker({
         map: resultsMap,
-        position: results[0].geometry.location
+        position: results[0].geometry.location,
       });
     } else {
-      alert('Geocode was not successful for the following reason: ' + status);
+      alert("Geocode was not successful for the following reason: " + status);
     }
   });
 }
-
